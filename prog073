@@ -1,0 +1,13 @@
+int main()
+{
+    char zdanie1[] = "Ala ma";
+    char zdanie2[] = "kota";
+    int dlugosc = strlen(zdanie1) + strlen(zdanie2);
+    dlugosc++;
+    char cale_zdanie[dlugosc] = {0};    /*here i have an error*/
+    strcpy (cale_zdanie, zdanie1);
+    strcat (cale_zdanie, " ");
+    strcat (cale_zdanie, zdanie2);
+    printf ("Dlugosc zdania to %d, a cale zdanie to %s", dlugosc, cale_zdanie);
+    return 0;
+}
